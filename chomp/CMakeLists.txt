@@ -1,3 +1,10 @@
+cmake_minimum_required(VERSION 2.8.3)
+
+include_directories(
+    "${PROJECT_SOURCE_DIR}/include"
+    "${PROJECT_SOURCE_DIR}/include/chomp-multigrid"
+)
+
 add_library(chomp Constraint.cpp ConstraintFactory.cpp Chomp.cpp)
 
 add_executable(testmatops testmatops.cpp)

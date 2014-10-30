@@ -1,4 +1,9 @@
-# CMakeLists.txt for hubomz/mzcommon
+cmake_minimum_required(VERSION 2.8.3)
+
+include_directories(
+    "${PROJECT_SOURCE_DIR}/include"
+    "${PROJECT_SOURCE_DIR}/include/mzcommon"
+)
 
 set(mzcommon_srcs
   mersenne.c
